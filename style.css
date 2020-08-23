@@ -1,0 +1,434 @@
+html, body {
+    height: 100vh;
+    background-color: #CD222A;
+}
+
+h2 {
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+    padding-top: 0.6em;
+}
+
+.card {
+    background-color: #dbdbdb;
+    border-radius: .5em;
+    box-shadow:  12px 12px 16px 0 rgba(0, 0, 0, 0.65),
+    -6px -6px 10px 0 rgba(255, 255, 255, 0.125) !important;
+    margin-top: 0;
+    padding: 1.25em 1.5em 1.25em 1.5em;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 82vh;
+    width: 30vw;
+}
+
+.card-header {
+    background-color: #dbdbdb;
+    padding: 0;
+}
+
+.input-form {
+    border-radius: .5em;
+    background-color: #ffffff !important;
+    color: #000000;
+    margin-bottom: 1em;
+    outline: unset;
+    text-align: right;
+}
+
+.form-control:focus {
+    background-color: #ffffff;
+    box-shadow: unset;
+    /* box-shadow: 0 0 0 0.2rem rgba(231, 231, 231, 0.1); */
+    color: #000000;
+    outline: auto;
+    outline-color: #004E48;
+}
+
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #000000;
+    opacity: 1; /* Firefox */
+}
+
+.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #000000;
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: #000000;
+}
+
+.result-field {
+    background-color: #2F8C85 !important;
+    border-radius: .5em;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(2.75em, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: .5em;
+    height: 2em;
+    padding: 1em .75em;
+}
+
+.result-header {
+    font-size: 1.5em;
+    grid-column: span 4;
+}
+
+.coins{
+    border: solid #ffffff 2px;
+    border-radius: 0.5em;
+    font-size: .95em;
+    grid-row: span 2;
+    padding: .15em .35em;
+    margin: 0;
+}
+
+h5, h6 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.cents-field {
+    margin-top: 1em;
+}
+
+.btns-field {
+    padding: 0;
+    padding-top: 1.15em;
+    height: 6.25em;
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: .55em;
+    padding: 0;
+  }
+
+.btn-shadow {
+    box-shadow:  12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 10px 0 rgba(255, 255, 255, 0.3) !important;
+}
+
+.btn-shadow:hover {
+    box-shadow:  12px 12px 16px 0 rgba(0, 0, 0, 0.45),
+    -6px -6px 10px 0 rgba(255, 255, 255, 0.5) !important;
+}
+
+.btn-shadow:active {
+    box-shadow:  4px 4px 8px 0 rgba(0, 0, 0, 0.45),
+    2px 2px 4px 0 rgba(255, 255, 255, 0.5) !important;
+    transform: translateY(2px);
+}
+
+.btn-shadow:focus {
+    outline: none;
+}
+
+.btn-number {
+    background-color: #f8f9fa;
+}
+
+.convert-btn {
+    background-color: #2F8C85;
+    border-radius: 0.5em;
+    color: #ffffff;
+    font-size: 0.95em;
+}
+
+.convert-btn:hover {
+    color: #ffffff;
+}
+
+.clear {
+    background-color: #2F8C85;
+    color: #ffffff !important;
+    font-size: 1.2em;
+}
+
+.all-clear {
+    background-color: #CD222B;
+    color: #ffffff !important;
+    grid-area: 1 / 4 / span 4 / span 1;
+    margin-left: auto;
+    width: 4.75em;
+}
+
+.card-footer {
+    padding: 0;
+    margin-top: 0em;
+}
+
+.modal-title {
+    color: #000000;
+}
+
+/* media queries */
+@media only screen and (max-width: 1200px) {
+    .card {
+        width: 40vw;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .card {
+        width: 42vw;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .card {
+        width: 44vw;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    .card {
+        width: 48vw;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    .card {
+        width: 52vw;
+    }
+}
+
+@media only screen and (max-width: 825px) {
+    .card {
+        width: 56vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 60vw;
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    .card {
+        width: 64vw;
+    }
+}
+
+@media only screen and (max-width: 668px) {
+    .card {
+        width: 68vw;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .card {
+        width: 72vw;
+    }
+}
+
+@media only screen and (max-width: 596px) {
+    .card {
+        width: 76vw;
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    .card {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    h2 {
+        font-size: 1.75em;
+        padding: 0.2em 2.5em;
+    }
+
+    .card {
+        padding: 1.5em;
+        width: 78vw;
+    }
+
+    .input-form {
+        height: 2.25em;
+        margin-bottom: 0.85em;
+    }
+
+    .result-field {
+        gap: 0.4em;
+        padding: 0.8em 0.6em;
+    }
+
+    .result-header {
+        font-size: 1.35em;
+        margin-top: 0.3em;
+    }
+
+    .coins {
+        font-size: 0.84em;
+        margin: 0;
+        padding: 0.5em 0.3em;
+    }
+
+    .btns-field {
+        height: 4.75em;
+    }
+
+    .btn-number, .all-clear {
+        font-size: 0.82em;
+    }
+
+    .convert-btn {
+        font-size: .84em;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    h2 {
+        font-size: 1.9em;
+        padding: 0.4em 0.8em;
+    }
+
+    .card {
+        padding: 1.4em;
+        width: 82vw;
+    }
+
+    .input-form {
+        height: 2.62em;
+    }
+
+    .result-field {
+        gap: 0.3em;
+    }
+
+    .result-header {
+        font-size: 1.5em;
+    }
+
+    .coins {
+        padding: 0.5em 0.25em;
+    }
+
+    .cents-field {
+        position: relative;
+        top: 0.75em;
+    }
+
+    .btns-field {
+        height: 1.25em;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    h2 {
+        font-size: 1.75em;
+    }
+
+    .card {
+        padding: 1.35em;
+        width: 84vw;
+    }
+
+    .input-form {
+        height: 2.4em;
+    }
+
+    .result-field {
+        padding: 0.75em 0.4em;
+    }
+
+    .result-header {
+        font-size: 1.3em;
+    }
+
+    .coins {
+        font-size: .8em;
+        padding: 0.45em 0.2em;
+    }
+
+    .btns-field {
+        height: 4.25em;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    h2 {
+        font-size: 1.66em;
+    }
+
+    .card {
+        padding: 1.2em;
+    }
+
+    .input-form {
+        height: 2.1em;
+        margin-bottom: 0.75em;
+    }
+
+    .result-header {
+        font-size: 1.25em;
+        margin-top: 0.25em;
+    }
+
+    .coins {
+        font-size: .78em;
+    }
+
+    .btns-field {
+        height: 4.8em;
+        padding-top: 1.25em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    h2 {
+        font-size: 1.5em;
+        padding: 0.35em 0.75em;
+    }
+
+    .card {
+        padding: .95em;
+        width: 86vw;
+    }
+
+    .input-form {
+        height: 1.95em;
+        margin-bottom: 0.66em;
+    }
+
+    .result-field {
+        gap: 0.25em;
+        padding: 0.75em 0.45em;
+    }
+
+    .result-header {
+        font-size: 1em;
+        margin-top: 0.2em;
+    }
+
+    .coins {
+        border: solid #ffffff 1px;
+        font-size: .68em;
+        margin: 0;
+        padding: 0.25em 0.1em;
+    }
+
+    .btns-field {
+        height: 4.75em;
+    }
+
+    .btn-number, .all-clear {
+        font-size: 0.88em;
+    }
+
+    .convert-btn {
+        font-size: .75em;
+    }
+
+    .card-footer {
+        padding: 0;
+        margin-top: 1.25em;
+    }
+}
